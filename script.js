@@ -55,4 +55,13 @@
   if (citationSection) {
     citationSection.remove();
   }
+
+  // Remove share button
+  waitForElementToDisplay('.vcom_share', 100);
+
+  // Remove ipa link
+  const ipaGuide = document.querySelector('.ipa-guide');
+  if (ipaGuide) {
+    ipaGuide.remove();
+  }
 })();
